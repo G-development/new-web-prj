@@ -1,5 +1,5 @@
 {
-  "name": "argstest",
+  "name": "newwebprj",
   "version": "1.0.0",
   "description": "Test args cli",
   "main": "./bin/index.js",
@@ -9,7 +9,7 @@
     "path": "^0.12.7"
   },
   "bin": {
-    "argstest": "./bin/index.js"
+    "new-web-prj": "./bin/index.js"
   },
   "devDependencies": {},
   "scripts": {

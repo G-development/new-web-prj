@@ -5,6 +5,7 @@ const path = require("path");
 const library = require("../lib/lib.js");
 
 // console.log(path);
+console.log('Dirname:', __dirname)
 
 args
   // .option("port", "The port on which the app will be running", 3000)
@@ -30,6 +31,7 @@ if (flags.name) {
 
   const dest_config = path.join(flags.name, "/config");
   const dest_src = path.join(flags.name, "/src");
+  const dest_assets = path.join(flags.name, "src/assets");
   const dest_js = path.join(flags.name, "/src/javascript");
   const dest_sass = path.join(flags.name, "/src/sass");
 
@@ -37,17 +39,20 @@ if (flags.name) {
   library.createDir(flags.name);
   library.createDir(dest_config);
   library.createDir(dest_src);
+  library.createDir(dest_assets);
   library.createDir(dest_js);
   library.createDir(dest_sass);
 
   const source_package = path.join(__dirname, "../template/package/");
   const source_config = path.join(__dirname, "../template/config/");
-  const source_src = path.join(__dirname, "../template/src/");
+  // const source_src = path.join(__dirname, "../template/src/");
+  const source_assets = path.join(__dirname, "../template/src/assets/");
   const source_js = path.join(__dirname, "../template/src/javascript/");
   const source_sass = path.join(__dirname, "../template/src/sass/");
 
   library.copyAllFile(source_package, flags.name);
   library.copyAllFile(source_config, dest_config);
+  library.copyAllFile(source_assets, dest_assets);
   library.copyAllFile(source_js, dest_js);
   library.copyAllFile(source_sass, dest_sass);
 }
