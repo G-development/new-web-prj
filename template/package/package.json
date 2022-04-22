@@ -1,7 +1,7 @@
 {
   "name": "gc-dev",
   "version": "1.0.0",
-  "description": "GC-Dev build for creating compiled websites",
+  "description": "GC-DEV - Build compiled websites",
   "main": "/src/javascript/index.js",
   "scripts": {
     "build-dev": "webpack --config ./config/dev.config.js",

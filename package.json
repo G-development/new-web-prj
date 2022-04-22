@@ -1,7 +1,7 @@
 {
   "name": "newwebprj",
   "version": "1.0.0",
-  "description": "Test args cli",
+  "description": "CLI to build compiled websites",
   "main": "./bin/index.js",
   "dependencies": {
     "args": "^5.0.1",
