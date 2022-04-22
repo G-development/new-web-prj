@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+::-webkit-scrollbar-corner {
+  background: #1e1e24;
+}
+
+::selection {
+  background: #ff0000;
+}
+
+:root {
+  --font: "Source Sans Pro", sans-serif;
+  --white: #f1f1f1;
+  --col_1: #ff0000;
+  /* --col_1: blue; */
+}
+
+body {
+  background: #1a1a1a;
+}

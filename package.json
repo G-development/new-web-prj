@@ -1,0 +1,21 @@
+{
+  "name": "argstest",
+  "version": "1.0.0",
+  "description": "Test args cli",
+  "main": "./bin/index.js",
+  "dependencies": {
+    "args": "^5.0.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "bin": {
+    "argstest": "./bin/index.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "author": "Giovanni Cuozzo",
+  "license": "ISC"
+}
